@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Random Sentence Generator">
+		<meta name="keywords" content="random">
+
+		<title>Random Sentence Generator</title>
+		
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<script>
+		
+			var person = [
+				'Russell Crowe',
+				'Simon Cowell',
+				'LeBron James',
+				'Jeff Bridges',
+				'Kevin Garnett',
+				'Kayne West',
+				'Miranda Kerr',
+				'Kate Winslet',
+				'Natalya Rudakova',
+				'Brad Pitt'
+			];
+			
+			var verb = [
+				'pause', 'dry', 'instruct', 'reject', 
+				'thank', 'injure', 'scrape',
+				'observe', 'touch', 'retire'
+			];
+			
+			var things = [
+				'iPod', 'banana', 'shoe lace', 'flower',
+				'toothbruh', 'knife', 'piano', 
+				'mop', 'soy sauce packet', 'wagon'
+			]
+
+			var randomNumber1 = Math.floor(Math.random()*verb.length);
+			var randomNumber2 = Math.floor(Math.random()*verb.length);
+			var randomNumber3 = Math.floor(Math.random()*verb.length);
+			
+			var personname = person[randomNumber1];
+			var verbname = verb[randomNumber2];
+			var thingname = things[randomNumber3];
+			document.write("<h1>" + randomNumber1 + " " + randomNumber2 + " " + randomNumber3 + "</h1>");
+
+			document.write("Tonight, <strong>" + personname + "</strong> will <strong>" + verbname + "</strong> a <strong>" + thingname + "</strong>.");
+		
+		</script>
+	</head>
+	<body>
+		<!-- PAGE CONTENT WILL BE PRINTED HERE --> 
+	</body>
+</html>
